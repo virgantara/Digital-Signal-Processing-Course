@@ -24,7 +24,7 @@ kernel = np.array([
 kernel2 = np.ones((3, 3), dtype=np.float32)
 
 # Apply convolution
-convolved = cv2.filter2D(image, ddepth=-1, kernel=kernel)
+convolved = cv2.filter2D(image, ddepth=-1, kernel=1/9*kernel2)
 
 # Tampilkan hasil
 plt.figure(figsize=(12, 5))
